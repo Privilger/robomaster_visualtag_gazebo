@@ -15,6 +15,7 @@
             <uri>model://visualtag_13/materials/textures</uri>
             <name>visualtag_13</name>
           </script>
+          <ambient>1 1 0 1.0</ambient>
         </material>
       </visual>
      </link>
