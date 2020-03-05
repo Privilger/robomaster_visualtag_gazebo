@@ -15,7 +15,7 @@ class Generator:
 			self.material_template = f.read()
 
 	def generate(self, tag_directory, tag_name, tag_size):
-		img = cv2.imread('%s/%s.png' % (tag_directory, tag_name), 0)
+		img = cv2.imread('%s/%s.png' % (tag_directory, tag_name), cv2.IMREAD_COLOR)
 		img = cv2.resize(img, (tag_size, tag_size), interpolation=cv2.INTER_NEAREST)
 
 		if not os.path.exists('models/%s/materials/scripts' % tag_name):
